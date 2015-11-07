@@ -1,3 +1,34 @@
-<h2 id="title">Welcome to Ember</h2>
+<div id="st-container" class="st-container">
 
-{{outlet}}
+  <!-- content push wrapper -->
+  <div class="st-pusher">
+    <!--
+      example menus
+      these menus will be under the push wrapper
+    -->
+    <nav class="st-menu st-effect-3" id="menu-3">
+      <h2 class="icon icon-lab">Sidebar</h2>
+      <ul>
+        <li><a class="icon icon-data" href="#">Data Management</a></li>
+        <li><a class="icon icon-location" href="#">Location</a></li>
+        <li><a class="icon icon-study" href="#">Study</a></li>
+        <li><a class="icon icon-photo" href="#">Collections</a></li>
+        <li><a class="icon icon-wallet" href="#">Credits</a></li>
+      </ul>
+    </nav>
+
+    <div class="st-content"><!-- this is the wrapper for the content -->
+      <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+        <!-- Top Navigation -->
+        <header class="codrops-header">
+          <h1>Sidebar Transitions <span>Transition effects for off-canvas views</span></h1>
+        </header>
+        <div class="main clearfix">
+          <div id="st-trigger-effects" class="column">
+            <button {{action "onMenuOpen" bubbles=false}}>Open</button>
+          </div>
+        </div><!-- /main -->
+      </div><!-- /st-content-inner -->
+    </div><!-- /st-content -->
+  </div><!-- /st-pusher -->
+</div><!-- /st-container -->
