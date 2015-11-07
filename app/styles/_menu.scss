@@ -1,0 +1,48 @@
+.main-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 60px;
+  background: #b81800;
+
+  .logo {
+    display: block;
+    color: #fff;
+    background: #26211d;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+
+    a {
+      color: #FFF;
+    }
+  }
+
+  .items {
+    margin: 0;
+    padding: 0;
+
+    &--bottom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    &__item {
+      text-align: center;
+      list-style: none;
+      color: #FFF;
+      padding: 5px 0;
+      font-size: 1.3rem;
+
+      a {
+        color: #FFF;
+
+        &:hover {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}

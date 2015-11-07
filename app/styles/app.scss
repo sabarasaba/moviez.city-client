@@ -18,7 +18,6 @@ body > .ember-view,
 
 .st-content {
   overflow-y: scroll;
-  background: #f3efe0;
 }
 
 .st-content,
@@ -27,6 +26,7 @@ body > .ember-view,
 }
 
 .st-container {
+  margin-left: 60px;
   position: relative;
   overflow: hidden;
 }
@@ -162,3 +162,6 @@ body > .ember-view,
 .no-js .st-pusher {
   padding-left: 300px;
 }
+
+
+@import "menu";

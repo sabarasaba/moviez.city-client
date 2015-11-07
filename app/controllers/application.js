@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
       e.preventDefault();
 
       if (this.isMenuOpen && $(e.target).parents('.st-menu').length === 0) {
-        $('#st-container').removeClass('st-menu-open');
+        $('#js-container').removeClass('st-menu-open');
         this.isMenuOpen = false;
       }
     });
@@ -16,7 +16,7 @@ export default Ember.Controller.extend({
 
   actions: {
     onMenuOpen(e) {
-      $('#st-container').addClass('st-effect-3 st-menu-open');
+      $('#js-container').addClass('st-effect-3 st-menu-open');
       this.isMenuOpen = true;
     }
   }
