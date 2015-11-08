@@ -12,6 +12,7 @@
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.2.1",
     "qunit": "~1.18.0",
-    "normalize-scss": "~3.0.3"
+    "normalize-scss": "~3.0.3",
+    "flexboxgrid": "~6.3.0"
   }
 }
