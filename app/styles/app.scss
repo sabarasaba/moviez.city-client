@@ -61,7 +61,12 @@
       vertical-align: middle;
     }
 
+    &:hover {
+      background-color: #161616;
+    }
+
     &.active {
+      color: #FFFFFF;
       background-color: #161616;
 
       &:before {
