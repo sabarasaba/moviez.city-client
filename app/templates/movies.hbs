@@ -2,10 +2,10 @@
 
 <div class="movies-container">
   {{#each model as |movie|}}
-    <a href="#" class="movies-container__item">
+    {{#link-to "movie" movie class="movies-container__item"}}
       <img src="http://image.tmdb.org/t/p/w342/{{movie.poster_path}}" alt="#">
       <div class="title">{{movie.title}}</div>
       <div class="time">{{movie.runtime}} min</div>
-    </a>
+    {{/link-to}}
   {{/each}}
 </div>

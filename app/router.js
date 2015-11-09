@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('discover');
   this.route('lists');
   this.route('top50');
+
+  this.route('movie', {path: '/movie/:slug'});
 });
 
 export default Router;

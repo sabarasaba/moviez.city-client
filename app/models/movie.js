@@ -17,5 +17,10 @@ export default DS.Model.extend({
   trailer: DS.attr('string'),
   imdb: DS.attr('raw'),
   awards: DS.attr('raw'),
-  download: DS.attr('raw')
+  download: DS.attr('raw'),
+
+  slug: Ember.computed('title', function() {
+    return this.get('title').dasherize();
+  })
+
 });
