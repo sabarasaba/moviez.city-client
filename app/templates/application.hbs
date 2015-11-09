@@ -9,23 +9,23 @@
     <ul class="nav-list">
       <li class="nav-list__item">
         {{fa-icon icon="home"}}
-        <span class="title">Home</span>
+        <span class="title">Home</span> {{! renders / }}
       </li>
       <li class="nav-list__item active">
         {{fa-icon icon="globe"}}
-        <span class="title">Discover</span>
+        <span class="title">Discover</span> {{! renders /discover }}
       </li>
       <li class="nav-list__item">
         {{fa-icon icon="list"}}
-        <span class="title">Lists</span>
+        <span class="title">Lists</span> {{! renders /lists }}
       </li>
       <li class="nav-list__item">
         {{fa-icon icon="bar-chart"}}
-        <span class="title">Top 50</span>
+        <span class="title">Top 50</span> {{! renders /top50 }}
       </li>
       <li class="nav-list__item">
         {{fa-icon icon="th-large"}}
-        <span class="title">Genres</span>
+        <span class="title">Genres</span> {{! renders /genres/horror }}
       </li>
     </ul>
   </div>
@@ -34,7 +34,7 @@
     <h1>Discover</h1>
 
     <div class="movies-container">
-      <a href="#" class="movies-container__item">
+      <a href="#" class="movies-container__item"> {{! renders /movie/ant-man }}
         <img src="http://image.tmdb.org/t/p/w342/7SGGUiTE6oc2fh9MjIk5M00dsQd.jpg" alt="#">
         <div class="title">Ant-Man</div>
         <div class="time">115 min</div>

@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
   },
 
   actions: {
-    onMenuOpen(e) {
+    onMenuOpen() {
       Ember.$('#js-container').addClass('st-effect-3 st-menu-open');
       this.isMenuOpen = true;
     }
