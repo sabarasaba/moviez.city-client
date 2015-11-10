@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+
+<div class="movies-container">
+  {{#each model as |movie|}}
+    {{#link-to "movies.show" movie class="movies-container__item"}}
+      <img src="http://image.tmdb.org/t/p/w342/{{movie.poster_path}}" alt="#">
+      <div class="title">{{movie.title}}</div>
+      <div class="time">{{movie.runtime}} min</div>
+    {{/link-to}}
+  {{/each}}
+</div>

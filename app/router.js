@@ -6,12 +6,14 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('home', {path: '/'});
+  // this.route('home', {path: '/'});
   this.route('discover');
   this.route('lists');
   this.route('top50');
 
-  this.route('movie', {path: '/movie/:slug'});
+  this.route('movies', {path: '/'}, function() {
+    this.route('show', {path: '/movie/:id'});
+  });
 });
 
 export default Router;
