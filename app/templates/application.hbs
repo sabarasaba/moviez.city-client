@@ -15,16 +15,20 @@
         {{fa-icon icon="list"}}
         <span class="title">Lists</span>
       {{/link-to}}
-      <li class="nav-list__item">
-        {{fa-icon icon="th-large"}}
-        <span class="title">Genres</span>
+    </ul>
 
-        <ul class="nav-sublist">
-          <li>Horror</li>
-          <li>Comedy</li>
-          <li>Drama</li>
-        </ul>
-      </li>
+    <div class="nav-list__separator">
+      {{fa-icon icon="th-large"}}
+      <span class="title">Genres</span>
+    </div>
+
+    <ul class="nav-list padded">
+      {{#link-to "movies.category" "Action" tagName="li" class="nav-list__item"}}
+        Action
+      {{/link-to}}
+      {{#link-to "movies.category" "Comedy" tagName="li" class="nav-list__item"}}
+        Comedy
+      {{/link-to}}
     </ul>
   </div>
 

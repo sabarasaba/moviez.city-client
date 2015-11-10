@@ -44,6 +44,31 @@
   padding: 0;
   list-style: none;
 
+  &__separator {
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 1.3rem;
+    color: #7e7e7e;
+
+    .fa {
+      padding-right: 8px;
+      font-size: 22px;
+      vertical-align: middle;
+    }
+
+    .title {
+      vertical-align: middle;
+    }
+  }
+
+  &.padded {
+    .nav-list__item {
+      padding-left: 3.3rem;
+    }
+  }
+
   &__item {
     position: relative;
     display: inline-block;

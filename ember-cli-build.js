@@ -8,5 +8,7 @@ module.exports = function(defaults) {
     }
   });
 
+  app.import('bower_components/lodash/lodash.min.js');
+
   return app.toTree();
 };

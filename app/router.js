@@ -12,6 +12,7 @@ Router.map(function() {
 
   this.route('movies', {path: '/'}, function() {
     this.route('show', {path: '/movie/:id'});
+    this.route('category', {path: '/category/:name'});
   });
 });
 
