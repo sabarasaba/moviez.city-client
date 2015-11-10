@@ -10,8 +10,6 @@ Router.map(function() {
     this.route('show', {path: ':id'});
   });
 
-  this.route('top50');
-
   this.route('movies', {path: '/'}, function() {
     this.route('show', {path: '/movie/:id'});
   });
