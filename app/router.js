@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('lists', function() {
-    this.route('show', {path: 'list/:id'});
+    this.route('show', {path: ':id'});
   });
 
   this.route('top50');
