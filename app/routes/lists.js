@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  title: 'Lists',
+
   model() {
-    return {
-      title: 'Lists'
-    };
+    return this.store.findAll('list');;
   }
 });
