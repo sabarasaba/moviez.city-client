@@ -1,7 +1,1 @@
-<h1>{{ title }}</h1>
-
-{{#each model as |movie|}}
-  {{#link-to "movies.show" movie class="movies-container__item"}}
-    <div class="title">{{movie.title}}</div>
-  {{/link-to}}
-{{/each}}
+{{outlet}}

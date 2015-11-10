@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+
+{{#each model as |list|}}
+  {{#link-to "lists.show" list class="movies-container__item"}}
+    <div class="title">{{list.title}}</div>
+  {{/link-to}}
+{{/each}}
