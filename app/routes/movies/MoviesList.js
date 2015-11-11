@@ -13,7 +13,7 @@ export default Ember.Route.extend(InfinityRoute, {
     startingPage: 1
   },
 
-  model(params) {
+  model() {
     return this.infinityModel('movie', this.apiParams);
   }
 });
