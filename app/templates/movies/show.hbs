@@ -1,3 +1,17 @@
-<h1>show movie data</h1>
+<div class="movie_container">
+  <div class="movie">
+    <div class="movie__backdrop" style="background-image: url(https://image.tmdb.org/t/p/w1000{{ model.backdrop_path }})"></div>
+    <div class="movie__content">
+      <div class="movie__details">
+        <img class="movie__poster" src="http://image.tmdb.org/t/p/w185/{{model.poster_path}}" alt="{{model.title}}">
 
-{{model.title}}
+        <h1>{{ model.title }}</h1>
+        <h3>{{ model.release_date }}</h3>
+        <p>{{ model.plot }}</p>
+      </div>
+      <div class="movie__actors">
+
+      </div>
+    </div>
+  </div>
+</div>

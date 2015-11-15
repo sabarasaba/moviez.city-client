@@ -11,7 +11,7 @@ Router.map(function() {
   });
 
   this.route('movies', {path: '/'}, function() {
-    this.route('show', {path: '/movie/:id'});
+    this.route('show', {path: '/movie/:slug'});
     this.route('category', {path: '/category/:name'});
   });
 });
