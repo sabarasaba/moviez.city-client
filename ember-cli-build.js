@@ -9,6 +9,7 @@ module.exports = function(defaults) {
   });
 
   app.import('bower_components/lodash/lodash.min.js');
+  app.import('bower_components/moment/min/moment.min.js');
 
   return app.toTree();
 };
