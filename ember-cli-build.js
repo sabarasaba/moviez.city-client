@@ -11,5 +11,13 @@ module.exports = function(defaults) {
   app.import('bower_components/lodash/lodash.min.js');
   app.import('bower_components/moment/min/moment.min.js');
 
+  // Import swipebox dependencies
+  app.import('bower_components/swipebox/src/js/jquery.swipebox.min.js');
+  app.import('bower_components/swipebox/src/css/swipebox.min.css');
+  app.import('bower_components/swipebox/src/img/icons.png', {destDir: 'img/'});
+  app.import('bower_components/swipebox/src/img/icons.svg', {destDir: 'img/'});
+  app.import('bower_components/swipebox/src/img/loader.gif', {destDir: 'img/'});
+  });
+
   return app.toTree();
 };

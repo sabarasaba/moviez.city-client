@@ -3,7 +3,7 @@
     <div class="movie__backdrop" style="background-image: url(https://image.tmdb.org/t/p/w1000{{ model.backdrop_path }})"></div>
     <div class="movie__content">
       <div class="movie__details">
-          <a href="http://image.tmdb.org/t/p/w780{{model.poster_path}}" target="_blank">
+          <a href="http://image.tmdb.org/t/p/w780{{model.poster_path}}" class="swipebox" title="{{ model.title }}">
             <img class="movie__poster" src="http://image.tmdb.org/t/p/w185{{model.poster_path}}" alt="{{model.title}}">
           </a>
 
@@ -16,6 +16,10 @@
           <div class="downloads">
             <a href="{{model.download.magnet}}" {{ action 'download' model.download.magnet}}>
               Download
+            </a>
+
+            <a class="swipebox" href="{{model.trailer}}">
+              Trailer
             </a>
           </div>
       </div>
