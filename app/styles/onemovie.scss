@@ -1,5 +1,6 @@
 .movie {
-
+  // Investigate whether I should use a picture pollyfill or
+  // mq's for keeping aspect ratio of backdrops
   &__backdrop {
     background-position: center;
     background-size: cover;
