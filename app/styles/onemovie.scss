@@ -35,6 +35,24 @@
 
         -webkit-font-smoothing: antialiased;
       }
+
+      >h3 {
+        margin: 0;
+        margin-bottom: 40px;
+
+        font-weight: 300;
+        color: #000002;
+
+        -webkit-font-smoothing: antialiased;
+      }
+
+      >p {
+        font-size: 15px;
+        font-weight: 400;
+        color: #000002;
+
+        -webkit-font-smoothing: antialiased;
+      }
     }
   }
 }
