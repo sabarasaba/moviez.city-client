@@ -11,7 +11,7 @@
   &__content {
     padding: 20px 2rem;
     background: rgba(255,255,255,.9);
-    margin-top: -50px;
+    margin-top: -95px;
     min-height: 100px;
   }
 
@@ -20,6 +20,7 @@
     width: 80%;
 
     .movie__poster {
+      width: 175px;
       padding-right: 2rem;
       display: table-cell;
     }
@@ -38,7 +39,7 @@
 
       >h3 {
         margin: 0;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
 
         font-weight: 300;
         color: #000002;
@@ -55,6 +56,10 @@
       }
     }
   }
+}
+
+.downloads {
+  display: table-row;
 }
 
 .movie_container {
