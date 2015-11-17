@@ -3,6 +3,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   title: DS.attr('string'),
+  slug: DS.attr('string'),
   poster_path: DS.attr('string'),
   backdrop_path: DS.attr('string'),
   original_language: DS.attr('string'),
@@ -19,10 +20,5 @@ export default DS.Model.extend({
   imdb: DS.attr('raw'),
   awards: DS.attr('raw'),
   download: DS.attr('raw'),
-  Categories: DS.attr('raw'),
-
-  slug: Ember.computed('title', function() {
-    return this.get('title').dasherize();
-  })
-
+  Categories: DS.attr('raw')
 });
