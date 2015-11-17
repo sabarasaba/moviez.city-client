@@ -15,7 +15,7 @@
             <div class="movie__details__description">
               <h1>{{ model.title }}</h1>
               <h3>{{formatted-date model.release_date 'LL'}} &nbsp; ({{model.runtime}} min) <span class="pg">{{model.rated}}</span></h3>
-              {{categories-list categories=model.Categories}}
+              {{categories-list elements=model.Categories}}
               <p>{{ model.plot }}</p>
             </div>
         </div>

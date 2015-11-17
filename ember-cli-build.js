@@ -8,8 +8,13 @@ module.exports = function(defaults) {
     }
   });
 
-  app.import('bower_components/lodash/lodash.min.js');
+  app.import('bower_components/lodash/lodash.min.js', {
+    'lodash': ['default']
+  });
   app.import('bower_components/moment/min/moment.min.js');
+  app.import('bower_components/randomcolor/randomColor.js', {
+    exports: { 'randomcolor': ['default'] }
+  });
 
   // Import swipebox dependencies
   app.import('bower_components/swipebox/src/js/jquery.swipebox.min.js');

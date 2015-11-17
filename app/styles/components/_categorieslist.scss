@@ -1,0 +1,16 @@
+.categories-list {
+
+  .category-item {
+    color: #FFFFFF;
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 700;
+
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .category-item + .category-item {
+    margin-left: 5px;
+  }
+}
