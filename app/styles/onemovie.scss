@@ -24,9 +24,13 @@
     position: relative;
   }
 
-  &__details {
+  &__data {
     display: table;
     width: 80%;
+  }
+
+  &__details {
+    display: table;
 
     .movie__poster {
       width: 175px;
@@ -64,6 +68,12 @@
         -webkit-font-smoothing: antialiased;
       }
     }
+  }
+
+  &__downloads {
+    margin-top: 30px;
+    border-top: 1px dotted #C8C9CA;
+    padding-top: 25px;
   }
 }
 

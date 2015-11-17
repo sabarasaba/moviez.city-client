@@ -1,0 +1,33 @@
+$green: #5bb75b;
+$white: #ffffff;
+$gray-dark:#555555;
+
+$btnHeight: 60px;
+
+
+.download-btns{
+  max-width: 300px;
+  background-color: $green;
+  color: $white;
+  text-align: center;
+  line-height: $btnHeight;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.download-text{
+  height: $btnHeight;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+
+  a{
+    float: left;
+    background-color: $gray-dark;
+    color: white;
+    padding: 0 1.3em;
+    font-size: 1.5em;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    line-height: $btnHeight;
+    text-decoration: none;
+  }
+}
