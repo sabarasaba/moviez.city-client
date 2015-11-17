@@ -1,4 +1,5 @@
 .movie {
+  position: relative;
   // Investigate whether I should use a picture pollyfill or
   // mq's for keeping aspect ratio of backdrops
   &__backdrop {
@@ -6,6 +7,12 @@
     background-size: cover;
     width: 100%;
     height: 400px;
+    position: relative;
+
+
+    &__play {
+      @include play-button (2em, 2em);
+    }
   }
 
   &__content {
@@ -13,6 +20,8 @@
     background: rgba(255,255,255,.9);
     margin-top: -95px;
     min-height: 100px;
+    z-index: 90;
+    position: relative;
   }
 
   &__details {

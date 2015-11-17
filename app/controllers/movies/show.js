@@ -2,7 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   init() {
-    Ember.$('.swipebox').swipebox();
+    Ember.$('.swipebox').swipebox({
+      autoplayVideos: true
+    });
   },
 
   actions: {
