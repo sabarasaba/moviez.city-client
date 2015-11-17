@@ -19,11 +19,24 @@
             </div>
         </div>
         <div class="movie__downloads">
-          <a href="{{model.download.magnet}}" {{ action 'download' model.download.magnet}}>
-            <div class="download-btns">
-              <span class="download-text"><i class="fa fa-magnet">&nbsp;&nbsp;</i>Download</span>
+          <div class="movie__downloads__data">
+            <div class="table__row">
+              <span class="key">Size</span> <span class="value">{{model.download.size}}</span>
             </div>
-          </a>
+            <div class="table__row">
+              <span class="key">Seeders</span> <span class="value">{{model.download.seeders}}</span>
+            </div>
+            <div class="table__row">
+              <span class="key">Leechers</span> <span class="value">{{model.download.leechers}}</span>
+            </div>
+          </div>
+          <div class="movie__downloads__link">
+            <a href="{{model.download.magnet}}" {{ action 'download' model.download.magnet}}>
+              <div class="download-btns">
+                <span class="download-text"><i class="fa fa-magnet">&nbsp;&nbsp;</i>Download</span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div class="movie__actors">

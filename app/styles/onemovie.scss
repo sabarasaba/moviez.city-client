@@ -71,14 +71,36 @@
   }
 
   &__downloads {
+    display: table;
+    width: 100%;
     margin-top: 30px;
     border-top: 1px dotted #C8C9CA;
     padding-top: 25px;
-  }
-}
 
-.downloads {
-  display: table-row;
+    &__data {
+      vertical-align: middle;
+      display: table-cell;
+      width: 250px;
+      padding-right: 2rem;
+
+      .table__row {
+        @include clearfix;
+      }
+
+      .key {
+        font-weight: 600;
+      }
+
+      .value {
+        float: right;
+      }
+    }
+
+    &__link {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
 }
 
 .movie_container {
