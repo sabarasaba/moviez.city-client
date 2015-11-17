@@ -20,7 +20,9 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'img-src': "'self' image.tmdb.org",
       'connect-src': "'self' moviez.city",
-      'style-src': "'self' 'unsafe-inline'"
+      'style-src': "'self' 'unsafe-inline'",
+      'default-src': "'none'",
+      'frame-src': "'self' *"
     }
   };
 
