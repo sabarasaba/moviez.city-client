@@ -17,7 +17,6 @@ module.exports = function(defaults) {
   app.import('bower_components/swipebox/src/img/icons.png', {destDir: 'img/'});
   app.import('bower_components/swipebox/src/img/icons.svg', {destDir: 'img/'});
   app.import('bower_components/swipebox/src/img/loader.gif', {destDir: 'img/'});
-  });
 
   return app.toTree();
 };
