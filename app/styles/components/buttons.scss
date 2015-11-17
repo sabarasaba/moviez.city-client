@@ -5,6 +5,11 @@ $gray-dark:#555555;
 $btnHeight: 60px;
 
 
+.download-btns--container {
+  display: inline-block;
+  width: 300px;
+}
+
 .download-btns{
   max-width: 300px;
   background-color: $green;
