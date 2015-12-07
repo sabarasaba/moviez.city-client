@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'client',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    defaultLocationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -17,21 +17,28 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
-    contentSecurityPolicy: {
-      'img-src': "'self' image.tmdb.org",
-      'connect-src': "'self' moviez.city",
-      'style-src': "'self' 'unsafe-inline'",
-      'default-src': "'none'",
-      'frame-src': "'self' *"
+
+    //contentSecurityPolicy: {
+      //'img-src': "'self' image.tmdb.org",
+      //'connect-src': "'self' moviez.city",
+      //'style-src': "'self' 'unsafe-inline'",
+      //'default-src': "'none'",
+      //'frame-src': "'self' *"
+    //},
+
+    cordova: {
+      rebuildOnChange: false,
+      emulate: false,
+      platform: 'ios'
     }
   };
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
+    ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {
@@ -47,7 +54,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/';
+
   }
 
   return ENV;
