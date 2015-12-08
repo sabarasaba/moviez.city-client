@@ -1,16 +1,18 @@
-<div class="content">
+{{!-- <div class="content">
 
-  <h1>{{ title }}</h1>
+  <h1>{{ title  }}</h1>
 
-  <div class="movies-container">
+  <div class="movies-container"> --}}
+  <ul class="products">
     {{#each model as |movie|}}
-      {{#link-to "movies.show" movie class="movies-container__item"}}
-        <img src="http://image.tmdb.org/t/p/w342/{{movie.poster_path}}" alt="#">
+      {{#link-to "movies.show" movie tagName="li" class="product"}}
+        <img src="http://image.tmdb.org/t/p/w342/{{movie.poster_path}}" alt="#" data-poster-image="{{movie.id}}">
         <div class="title">{{movie.title}}</div>
         <div class="time">{{movie.runtime}} min</div>
       {{/link-to}}
     {{/each}}
-  </div>
+  </ul>
+{{!--   </div>
 
   {{infinity-loader infinityModel=model loadingText="Loading..." loadedText="Finished!"}}
-</div>
+</div> --}}
