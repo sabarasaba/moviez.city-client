@@ -16,6 +16,8 @@ module.exports = function(defaults) {
     exports: { 'randomcolor': ['default'] }
   });
 
+  app.import('bower_components/fastclick/lib/fastclick.js');
+
   // Import swipebox dependencies
   app.import('bower_components/swipebox/src/js/jquery.swipebox.min.js');
   app.import('bower_components/swipebox/src/css/swipebox.min.css');
