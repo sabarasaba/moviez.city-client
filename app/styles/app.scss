@@ -255,8 +255,9 @@ a:hover {
   border-radius: 5px;
   background: #1c1d22;
   text-decoration: none;
-  width: 171px;
+  width: 161px;
   height: 305px;
+
 
   .title {
     @include truncate;
