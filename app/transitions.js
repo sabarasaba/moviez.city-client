@@ -4,10 +4,9 @@ export default function(){
   this.transition(
     this.fromRoute('movies.index'),
     this.toRoute('movies.show'),
-    this.use('explode', {
+    this.useAndReverse('explode', {
       matchBy: 'data-poster-image',
       use: ['fly-to', { duration }]
-    }),
-    this.reverse('toRight', { duration })
+    })
   );
 };
