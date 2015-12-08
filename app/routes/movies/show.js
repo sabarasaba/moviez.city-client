@@ -10,5 +10,11 @@ export default Ember.Route.extend({
       offset: 0,
       duration: 500
     });
+  },
+
+  actions: {
+    goBack() {
+      window.history.back();
+    }
   }
 });
